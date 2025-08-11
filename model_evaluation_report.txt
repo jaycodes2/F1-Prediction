@@ -1,0 +1,63 @@
+============================================================
+F1 RACE PREDICTION MODEL EVALUATION REPORT
+============================================================
+
+SUMMARY
+--------------------
+Models evaluated: 7
+
+RANDOM_FOREST
+-------------
+MAE: 1.643
+Spearman Correlation: 0.958
+Top-3 Accuracy: 90.0%
+Position Accuracy: 23.3%
+RMSE: 1.976
+
+XGBOOST
+-------
+MAE: 0.011
+Spearman Correlation: 0.997
+Top-3 Accuracy: 100.0%
+Position Accuracy: 100.0%
+RMSE: 0.021
+
+LIGHTGBM
+--------
+MAE: 3.967
+Spearman Correlation: 0.000
+Top-3 Accuracy: 36.7%
+Position Accuracy: 10.0%
+RMSE: 4.522
+
+ENSEMBLE_WEIGHTED_AVERAGE
+-------------------------
+MAE: 2.464
+Spearman Correlation: 0.720
+Top-3 Accuracy: 66.7%
+Position Accuracy: 16.7%
+RMSE: 3.151
+
+ENSEMBLE_STACKING
+-----------------
+MAE: 2.686
+Spearman Correlation: 0.652
+Top-3 Accuracy: 66.7%
+Position Accuracy: 10.0%
+RMSE: 3.368
+
+ENSEMBLE_VOTING
+---------------
+MAE: 2.455
+Spearman Correlation: 0.724
+Top-3 Accuracy: 70.0%
+Position Accuracy: 16.7%
+RMSE: 3.142
+
+ENSEMBLE_DYNAMIC_WEIGHTING
+--------------------------
+MAE: 2.477
+Spearman Correlation: 0.714
+Top-3 Accuracy: 70.0%
+Position Accuracy: 16.7%
+RMSE: 3.135
