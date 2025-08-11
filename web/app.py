@@ -137,7 +137,7 @@ class F1PredictionApp:
             
             model_type = st.selectbox(
                 "Prediction Model",
-                ['ensemble', 'random_forest', 'xgboost', 'lightgbm'],
+                ['ensemble', 'random_forest', 'gradient_boosting'],
                 help="Select the machine learning model for predictions"
             )
             st.session_state['model_type'] = model_type
@@ -279,7 +279,7 @@ class F1PredictionApp:
             
             ### 🎯 Key Features
             
-            - **Multiple ML Models**: Ensemble, Random Forest, XGBoost, LightGBM
+            - **Multiple ML Models**: Ensemble, Random Forest, Gradient Boosting
             - **Confidence Scoring**: Uncertainty quantification for predictions
             - **Weather Analysis**: Impact of weather conditions on race outcomes
             - **Overtaking Scenarios**: Probability analysis for position changes
@@ -300,7 +300,7 @@ class F1PredictionApp:
             
             **Machine Learning Models:**
             - Ensemble methods with weighted averaging
-            - Tree-based models (Random Forest, XGBoost, LightGBM)
+            - Tree-based models (Random Forest, Gradient Boosting)
             - Neural networks for complex pattern recognition
             - Time-series cross-validation for robust training
             
@@ -324,9 +324,9 @@ class F1PredictionApp:
         
         # Create sample performance data
         performance_data = {
-            'Model': ['Ensemble', 'XGBoost', 'Random Forest', 'LightGBM'],
-            'MAE': [2.1, 1.8, 2.3, 2.0],
-            'Spearman Correlation': [0.85, 0.88, 0.82, 0.84],
+            'Model': ['Ensemble', 'Random Forest', 'Gradient Boosting'],
+            'MAE': [2.1, 2.3, 2.0],
+            'Spearman Correlation': [0.85, 0.82, 0.84],
             'Top-3 Accuracy': [0.72, 0.75, 0.68, 0.71]
         }
         

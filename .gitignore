@@ -25,36 +25,61 @@ MANIFEST
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
 
 # Environment variables
 .env
-
-# Data files
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-data/fastf1_cache/
-
-# Model files
-models/*
-!models/.gitkeep
-
-# Test coverage
-htmlcov/
-.coverage
-.pytest_cache/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Logs
 *.log
 logs/
 
-# OS
-.DS_Store
-Thumbs.db
+# Data files
+data/raw/
+data/processed/
+*.csv
+*.json
+*.pkl
+*.pickle
+
+# Model files
+models/
+*.joblib
+*.h5
+*.pb
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+tmp/
+temp/
+*.tmp
